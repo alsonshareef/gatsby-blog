@@ -1,12 +1,10 @@
 import React from 'react';
 
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Layout from '../components/Layout/Layout';
 
 const Contact = () => {
     return (
-        <div>
-            <Header />
+        <Layout>
             <h1>Contact</h1>
             <a
                 href="https://github.com/alsonshareef"
@@ -15,8 +13,7 @@ const Contact = () => {
             >
                 Github
             </a>
-            <Footer />
-        </div>
+        </Layout>
     );
 };
 
