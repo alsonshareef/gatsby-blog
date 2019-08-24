@@ -5,6 +5,7 @@ const Header = () => {
     return (
         <header>
             <nav>
+                <h1>Alson Shareef</h1>
                 <ul>
                     <li>
                         <Link to="/">Home</Link>

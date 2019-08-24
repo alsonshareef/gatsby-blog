@@ -6,7 +6,7 @@ const indexPage = () => {
     return (
         <div>
             <Layout>
-                <h1>My Blog</h1>
+                <h1>Welcome to my blog page.</h1>
             </Layout>
         </div>
     );
