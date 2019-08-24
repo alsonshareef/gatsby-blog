@@ -1,23 +1,53 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import headerStyles from './Header.module.scss';
+
 const Header = () => {
     return (
-        <header>
+        <header className={headerStyles.header}>
             <nav>
-                <h1>Alson Shareef</h1>
-                <ul>
+                <h1>
+                    <Link className={headerStyles.title} to="/">
+                        Alson Shareef
+                    </Link>
+                </h1>
+                <ul className={headerStyles.navList}>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link
+                            className={headerStyles.navItem}
+                            activeClassName={headerStyles.navItemActive}
+                            to="/"
+                        >
+                            Home
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link
+                            className={headerStyles.navItem}
+                            activeClassName={headerStyles.navItemActive}
+                            to="/about"
+                        >
+                            About
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/blog">Blog</Link>
+                        <Link
+                            className={headerStyles.navItem}
+                            activeClassName={headerStyles.navItemActive}
+                            to="/blog"
+                        >
+                            Blog
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link
+                            className={headerStyles.navItem}
+                            activeClassName={headerStyles.navItemActive}
+                            to="/contact"
+                        >
+                            Contact
+                        </Link>
                     </li>
                 </ul>
             </nav>
